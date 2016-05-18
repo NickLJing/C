@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 int  refed(int count){
+    fprintf(stdout,"递归算法开始，第%d次递归\n",count);
     int result = 0 ;
     if(count == 0){
         fprintf(stdout,"迭代错误");
@@ -9,7 +10,6 @@ int  refed(int count){
         result = 1;
     }else{
         result = refed(count-1);
-        printf("当前第%d次迭代",result);
     }
     return result;
 
